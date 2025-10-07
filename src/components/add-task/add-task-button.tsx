@@ -18,6 +18,7 @@ function AddTask({
         type="text"
         onChange={(e) => inputChangeHandler(e)}
         value={taskValue}
+        id="new task"
         placeholder="Новая задача"
       />
       <button onClick={addTaskHandler} disabled={taskValue === ''}>

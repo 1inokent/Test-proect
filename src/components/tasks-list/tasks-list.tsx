@@ -32,6 +32,7 @@ function TaskList({
   return (
     <>
       <h3>Задачи</h3>
+      {tasks.length}
       <ul>
         {tasks.length === 0 && <p>Нет задач</p>}
 
@@ -44,6 +45,7 @@ function TaskList({
               <>
                 <input
                   value={editText}
+                  id={id.toString()}
                   onChange={(e) => setEditText(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && saveEdit(id)}
                   autoFocus
@@ -56,6 +58,7 @@ function TaskList({
                 {text}
                 <input
                   type="checkbox"
+                  id={id.toString()}
                   onChange={() => toggleTaskHandle(id)}
                   checked={completed}
                 />
