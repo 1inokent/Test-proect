@@ -1,11 +1,11 @@
 const NAME_IN_STORAGE = {
   TASKS: 'tasks',
-} as const
+} as const;
 
 const FILTERS = [
   { name: 'Все', status: 'all' },
   { name: 'Выполняется', status: 'active' },
   { name: 'Завершены', status: 'completed' },
-] as const
+] as const;
 
-export { NAME_IN_STORAGE, FILTERS }
+export { NAME_IN_STORAGE, FILTERS };

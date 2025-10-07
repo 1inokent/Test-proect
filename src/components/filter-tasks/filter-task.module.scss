@@ -1,0 +1,44 @@
+.filterTasks {
+  margin: 24px 0;
+  flex-shrink: 0;
+
+  h3 {
+    color: var(--title);
+    font-size: 18px;
+    margin: 0 0 12px 0;
+  }
+}
+
+.filterButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  padding: 10px 20px;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--border-color);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &.active {
+    border-color: var(--success-color);
+    background-color: rgba(39, 174, 96, 0.1);
+    color: var(--success-color);
+    font-weight: 600;
+  }
+}

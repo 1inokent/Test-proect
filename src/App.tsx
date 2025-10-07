@@ -1,9 +1,9 @@
-import TaskForm from './components/task-form/task-form'
+import TaskForm from './components/task-form/task-form';
 
-import './App.css'
+import './App.css';
 
 function App() {
-  return <TaskForm />
+  return <TaskForm />;
 }
 
-export default App
+export default App;

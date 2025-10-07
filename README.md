@@ -1,4 +1,6 @@
 # React + Vite
+
 ## START !!
-install dependencies - npm install;
-start - npm run dev;
+
+Установить зависимости - npm install;
+Запустить проект - npm run dev;
